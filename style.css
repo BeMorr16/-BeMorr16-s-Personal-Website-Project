@@ -12,7 +12,7 @@ body {
 }
 
 #header {
-  padding: 10px 16px;
+  padding: 1rem 1.5rem;
   background: #3a506b;
   color: #0b132b;
 }
@@ -21,7 +21,6 @@ body {
   position: fixed;
   top: 0;
   width: 100vw;
-  margin-right: 10px; /*maybe take away trying to solve the right side when stuck*/
 }
 
 .sticky + main {
@@ -29,31 +28,32 @@ body {
 }
 
 ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin: 0;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  list-style-type: none;
 }
 
 li {
-    padding: 8px;
-    border: 1px solid #f1faee;
-    border-radius: 8px;
-    box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  border: 1px solid #f1faee;
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.3);
 }
 
 li:hover {
-    background-color:darkgray;
+  background-color: darkgray;
+  transform: scale(1.2);
+  transition: transform 400ms;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: #f1faee;
+  text-decoration: none;
+  color: #f1faee;
 }
 
 main {
@@ -64,7 +64,7 @@ main {
 }
 
 figure {
-  margin: 20px;
+  margin: 2rem;
   border: 3px solid white;
   background-color: #555;
   color: white;
@@ -88,8 +88,8 @@ img:hover {
 div {
   border: 3px solid white;
   border-radius: 20px;
-  padding: 15px; 
-  margin: 15px;
+  padding: 1rem;
+  margin: 1.5rem;
   background-color: #3a506b;
 }
 
@@ -100,4 +100,57 @@ h2 {
 
 .par {
   color: #1c2541;
+}
+
+#form {
+  color: aliceblue;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactbod {
+  background-color: #1c2541;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+input {
+  width: 100%;
+}
+
+#name {
+  border: 2px solid #3a506b;
+}
+
+#email {
+  border: 2px solid #3a506b;
+}
+
+#message {
+  height: 10rem;
+  border-radius: 10px;
+}
+
+#contact {
+  color: aliceblue;
+}
+
+#submit {
+  margin: 1rem;
+}
+
+#success {
+  background-color: #3a506b;
+  color: #1c2541;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
