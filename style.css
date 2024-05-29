@@ -148,9 +148,12 @@ input {
 
 #success {
   background-color: #3a506b;
-  color: #1c2541;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#headsuccess {
+  color: #1c2541 !important;
 }
